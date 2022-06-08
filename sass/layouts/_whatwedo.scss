@@ -1,0 +1,36 @@
+.whatwedo{
+    display: none;
+    padding-top: 0;
+    @media screen and (min-width:1200px) {
+        display: flex;
+        min-width: 1200px;
+    }
+    }
+
+.whatwedo-list{
+    display: flex;
+}
+
+.whatwedo-item {
+    position: relative;
+}
+
+.whatwedo-item:not(:first-child) {
+    margin-left: var(--typical-margin);
+}
+
+.whatwedo-item-title {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: var(--light-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    
+}
